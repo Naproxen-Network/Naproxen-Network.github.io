@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>谷炳桥 · Bingqiao Gu</title>
+  <meta name="description" content="谷炳桥 · Bingqiao Gu — Shandong University. Research on LLMs, social computing, complex systems, and reinforcement learning." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="page-grain" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand-mark" href="#top" aria-label="Home">
+      <img src="images/nbu_logo2.png" alt="Shandong University" class="seal" width="44" height="44" />
+      <span class="brand-text">
+        <span class="brand-cn zh-only">谷炳桥</span>
+        <span class="brand-en">Bingqiao Gu</span>
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#about" data-i18n="nav.about">简介</a>
+      <a href="#publications" data-i18n="nav.pubs">论文</a>
+      <a href="#contact" data-i18n="nav.contact">联系</a>
+    </nav>
+    <button type="button" class="lang-toggle" id="langToggle" aria-label="Switch language">
+      <span class="lang-active" data-lang-label>中</span>
+      <span class="lang-divider">/</span>
+      <span class="lang-idle" data-lang-idle>EN</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-name">
+      <div class="hero-backdrop" aria-hidden="true">
+        <img src="images/nbu_logo2.png" alt="" class="hero-backdrop-seal" />
+      </div>
+      <div class="hero-copy">
+        <div class="hero-affiliation">
+          <img src="images/nbu_logo2.png" alt="" class="hero-seal" width="56" height="56" />
+          <p data-i18n="hero.affil">山东大学 · 计算机科学与技术</p>
+        </div>
+        <h1 id="hero-name" class="hero-name">
+          <span class="name-cn zh-only">谷炳桥</span>
+          <span class="name-en">Bingqiao Gu</span>
+        </h1>
+        <p class="hero-lead" data-i18n="hero.lead">
+          我对大模型后训练、社交计算与推荐、强化学习和大语言模型在大规模文本挖掘和图挖掘中的应用感兴趣。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#about" data-i18n="hero.cta.primary">自我介绍</a>
+          <a class="btn btn-ghost" href="#publications" data-i18n="hero.cta.secondary">论文列表</a>
+        </div>
+      </div>
+      <div class="hero-wave" aria-hidden="true"></div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-inner">
+        <p class="section-kicker" data-i18n="about.kicker">关于</p>
+        <h2 class="section-title" data-i18n="about.title">自我介绍</h2>
+        <div class="about-grid">
+          <div class="about-prose">
+            <p data-i18n="about.p1">
+              谷炳桥（Bingqiao Gu），就读于山东大学（Shandong University）计算机科学与技术专业，研究方向是大语言模型、社会计算、复杂系统、强化学习和大语言模型在图挖掘和文本挖掘中的应用，截止目前在 ACM SIGKDD、Nature Communications 等国际期刊、会议发表论文。
+            </p>
+            <p data-i18n="about.p2">
+              我熟悉 SFT、DPO 及 LoRA、多智能体强化学习算法，同时目前对后训练、大语言模型推理、大模型智能体感兴趣。学术研究领域，如果您对科学学、AI 伦理、复杂系统、高阶网络数据挖掘感兴趣，欢迎与我联系。
+            </p>
+          </div>
+          <ul class="about-facts">
+            <li>
+              <span class="fact-label" data-i18n="about.fact1.label">院校</span>
+              <span class="fact-value" data-i18n="about.fact1.value">山东大学 Shandong University</span>
+            </li>
+            <li>
+              <span class="fact-label" data-i18n="about.fact2.label">方向</span>
+              <span class="fact-value" data-i18n="about.fact2.value">LLMs · 社会计算 · 复杂系统 · 强化学习</span>
+            </li>
+            <li>
+              <span class="fact-label" data-i18n="about.fact3.label">兴趣</span>
+              <span class="fact-value" data-i18n="about.fact3.value">游泳 · 唱歌</span>
+            </li>
+            <li>
+              <span class="fact-label" data-i18n="about.fact4.label">导师</span>
+              <span class="fact-value" data-i18n="about.fact4.value">李栋教授</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section publications" id="publications">
+      <div class="section-inner">
+        <p class="section-kicker" data-i18n="pubs.kicker">论文</p>
+        <h2 class="section-title" data-i18n="pubs.title">发表与成果</h2>
+
+        <article class="pub reveal">
+          <div class="pub-meta">
+            <span class="pub-badge" data-i18n="pubs.1.badge">CCF-A · 独立第一作者</span>
+            <span class="pub-venue">ACM SIGKDD 2026</span>
+          </div>
+          <h3 class="pub-title">HyMAGE: Semantic-Aware Dynamic Hypergraph Generation</h3>
+          <p class="pub-authors" data-i18n="pubs.1.authors">
+            B. Gu, J. Zeng, N. Zhou, X. Qi, D. Li
+          </p>
+          <p class="pub-abstract" data-i18n="pubs.1.abstract">
+            我们提出 HyMAGE：基于语义优先连接、无需图结构预训练的语义感知动态超图生成框架。每个节点作为自治智能体，由 LLM 进行局部语义选择，使超边的形成与溶解在语义亲和与结构语境中自组织涌现。HyMAGE 可复现真实超图的九种高阶结构模式，并生成拓扑—语义对齐的属性超图，在 HGNN 训练与扩散行为上均表现良好。
+          </p>
+          <p class="pub-tags">
+            <span>Hypergraph Generation</span>
+            <span>LLM Agents</span>
+            <span>Semantic Modeling</span>
+            <span>Data Mining</span>
+          </p>
+        </article>
+
+        <article class="pub reveal">
+          <div class="pub-meta">
+            <span class="pub-badge" data-i18n="pubs.2.badge">Journal</span>
+            <span class="pub-venue">Nature Communications 2026</span>
+          </div>
+          <h3 class="pub-title">
+            <a class="pub-title-link" href="https://www.nature.com/articles/s41467-026-75382-1" target="_blank" rel="noopener noreferrer">Modeling network evolution by multi-agent reinforcement learning</a>
+          </h3>
+          <p class="pub-authors">
+            D. Li, T. Lin, Z. Bao, B. Gu, Y. Zhang, F. Yang, Y. Sun, Z. Du, P. Holme
+          </p>
+          <p class="pub-abstract" data-i18n="pubs.2.abstract">
+            针对网络演化常为群体决策、既有模型缺少节点策略学习与协同的问题，本文提出基于多智能体强化学习的网络演化模型 NEMARL：自治节点协作涌现群体智能并驱动结构演化。实验表明该模型可复现经典网络特征、较好拟合真实网络，并在场景测试中验证有效性。
+          </p>
+          <p class="pub-links">
+            <a href="https://www.nature.com/articles/s41467-026-75382-1" target="_blank" rel="noopener noreferrer" data-i18n="pubs.2.link">Nature 全文</a>
+          </p>
+          <p class="pub-tags">
+            <span>Multi-Agent RL</span>
+            <span>Network Evolution</span>
+            <span>Complex Systems</span>
+          </p>
+        </article>
+
+        <article class="pub reveal">
+          <div class="pub-meta">
+            <span class="pub-badge" data-i18n="pubs.3.badge">Conference</span>
+            <span class="pub-venue">ICIC 2026 · Springer LNCS</span>
+          </div>
+          <h3 class="pub-title">
+            <a class="pub-title-link" href="https://link.springer.com/chapter/10.1007/978-981-92-3447-9_25" target="_blank" rel="noopener noreferrer">Lévy Geometric Hypergraphs</a>
+          </h3>
+          <p class="pub-authors">L. Li, B. Gu, D. Li</p>
+          <p class="pub-pages" data-i18n="pubs.3.pages">pp. 307–317</p>
+          <p class="pub-abstract" data-i18n="pubs.3.abstract">
+            我们提出 Lévy Geometric Hypergraphs（LGH）：由 Lévy 飞行驱动的 k-均匀几何超图生成框架。顶点按重尾 Pareto–Lévy 律布点，超边连接尺度 s 内的 k−1 近邻；仿真未见尖锐渗流相变，并呈现尺度不变的高阶重叠结构，可作为高阶智能计算算法的基准生成模型。
+          </p>
+          <p class="pub-links">
+            <a href="https://link.springer.com/chapter/10.1007/978-981-92-3447-9_25" target="_blank" rel="noopener noreferrer" data-i18n="pubs.3.link">Springer 全文</a>
+          </p>
+          <p class="pub-tags">
+            <span>Lévy Flight</span>
+            <span>Hypergraphs</span>
+            <span>Higher-order Interaction</span>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-inner contact-inner">
+        <p class="section-kicker" data-i18n="contact.kicker">联系</p>
+        <h2 class="section-title" data-i18n="contact.title">欢迎交流研究与合作</h2>
+        <p class="section-lead" data-i18n="contact.lead">
+          若你对大语言模型、社会计算、复杂系统或图/文本挖掘相关方向感兴趣，欢迎邮件联系。
+        </p>
+        <a class="contact-mail" href="mailto:gubingqiao@mail.sdu.edu.cn">gubingqiao@mail.sdu.edu.cn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-wave" aria-hidden="true"></div>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="images/nbu_logo.png" alt="Shandong University" class="footer-logo zh-only" />
+        <img src="images/nbu_logo2.png" alt="Shandong University" class="footer-seal en-only" width="56" height="56" />
+        <div>
+          <p class="footer-name">
+            <span class="zh-only">谷炳桥 · </span>Bingqiao Gu
+          </p>
+          <p class="footer-affil">
+            <span class="zh-only">山东大学 · </span>Shandong University
+          </p>
+        </div>
+      </div>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 Bingqiao Gu. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
