@@ -81,8 +81,8 @@ export const profile: Profile = {
   department: { en: 'Computer Science and Technology', zh: '计算机科学与技术' },
   role: { en: 'Undergraduate Researcher', zh: '本科生' },
   bio: {
-    en: 'I am an undergraduate in Computer Science and Technology at Shandong University. My research interests are artificial intelligence, network science and engineering, large language models, and AI agents and their applications. My work appears in Nature Communications, KDD, and Physica A, including two first-author papers accepted at CCF A– or CORE A*–ranked conferences or journals.',
-    zh: '谷炳桥，现为山东大学计算机科学与技术专业本科生。研究兴趣为人工智能、网络科学与工程、大语言模型、智能体及其应用。已在 Nature Communications、KDD 和 Physica A 等期刊与会议发表多篇论文，其中以第一作者身份录用 CCF A（或 CORE A*）会议/期刊论文两篇。',
+    en: 'I am an undergraduate in Computer Science and Technology at Shandong University. My research interests are artificial intelligence, network science and engineering, large language models, and AI agents and their applications. My work appears in Nature Communications, KDD, EMNLP, and Physica A, including two first-author papers accepted at CCF A– or CORE A*–ranked conferences or journals.',
+    zh: '谷炳桥，现为山东大学计算机科学与技术专业本科生。研究兴趣为人工智能、网络科学与工程、大语言模型、智能体及其应用。已在 Nature Communications、KDD、EMNLP 和 Physica A 等期刊与会议发表多篇论文，其中以第一作者身份录用 CCF A（或 CORE A*）会议/期刊论文两篇。',
   },
   scholar: 'https://scholar.google.com/citations?user=u4KPLu0AAAAJ&hl=en',
   openreview: 'https://openreview.net/profile?id=~Bingqiao_Gu1',

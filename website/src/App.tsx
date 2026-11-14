@@ -116,7 +116,7 @@ export function App() {
           <div className="about-copy">
             <p>{language === 'en' ? <>I am an undergraduate student in Computer Science and Technology at <External href={profile.university}><span aria-hidden="true">🏫 </span>Shandong University</External>. </>
               : <>我是<External href={profile.university}><span aria-hidden="true">🏫 </span>山东大学</External>计算机科学与技术专业的本科生。</>}
-              {t.bio2} {t.bio3Start}<span className="venue-inline">Nature Communications</span>{language === 'en' ? ', ' : '、'}<span className="venue-inline">KDD</span>{language === 'en' ? ', and ' : ' 和 '}<span className="venue-inline">Physica A</span>{t.bio3End} {t.serviceSentence}</p>
+              {t.bio2} {t.bio3Start}<span className="venue-inline">Nature Communications</span>{language === 'en' ? ', ' : '、'}<span className="venue-inline">KDD</span>{language === 'en' ? ', ' : '、'}<span className="venue-inline">EMNLP</span>{language === 'en' ? ', and ' : ' 和 '}<span className="venue-inline">Physica A</span>{t.bio3End} {t.serviceSentence}</p>
           </div>
           <div className="research-interests"><h3><span aria-hidden="true">🌱 </span>{t.research}</h3><div>{interests.map(interest => <span key={interest.id}>{interest.label[language]}</span>)}</div></div>
         </section>
