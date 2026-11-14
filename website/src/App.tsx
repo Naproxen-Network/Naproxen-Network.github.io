@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react';
-import { ArrowRight, ArrowUpRight, BookOpen, Check, ChevronDown, ChevronUp, Code2, ExternalLink, FileText, Github, GraduationCap, Mail, Menu, Moon, Sun, Trophy, X, ZoomIn } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, BookOpen, ChevronDown, ChevronUp, Code2, ExternalLink, FileText, Github, GraduationCap, Mail, Menu, Moon, Sun, Trophy, X, ZoomIn } from 'lucide-react';
 import { academicServices, awards, experiences, interests, news, otherThings, profile, publications, type Language } from './data/content';
 import { ui } from './data/ui';
 import { VisitorMap } from './components/VisitorMap';
@@ -27,7 +27,6 @@ export function App() {
   const [figure, setFigure] = useState<(typeof publications)[number] | null>(null);
   const dialog = useRef<HTMLDialogElement>(null);
   const t = ui[language];
-  const latestNewsId = news.find(item => !item.upcoming)?.id;
 
   useEffect(() => {
     document.documentElement.lang = language === 'zh' ? 'zh-CN' : 'en';
@@ -122,11 +121,11 @@ export function App() {
         </section>
 
         <section id="news" className="content-section news-section" aria-labelledby="news-heading">
-          <div className="section-heading"><h2 id="news-heading"><span className="heading-emoji" aria-hidden="true">🔥</span>{t.news}</h2><span className="section-label">{news.at(-1)?.date.slice(0, 4)} — {news[0]?.date.slice(0, 4)}</span></div>
+          <div className="section-heading"><h2 id="news-heading"><span className="heading-emoji" aria-hidden="true">🔥</span>{t.news}</h2></div>
           <ol className="news-list">
             {(expandedNews ? news : news.slice(0, 6)).map(item => <li key={item.id}>
               <time dateTime={item.date.replace('.', '-')}>{item.date}</time>
-              <div>{item.venueKey ? <VenueMark venue={item.venueKey} /> : publications.filter(paper => item.id.startsWith(paper.id)).map(paper => <VenueMark key={paper.id} venue={paper.venueKey} />)}{item.link ? <a href={item.link} target={item.link.startsWith('#') ? undefined : '_blank'} rel="noopener noreferrer">{item.text[language]}</a> : <span>{item.text[language]}</span>}{item.upcoming ? <span className="new-badge">{t.upcoming}</span> : item.id === latestNewsId && <span className="new-badge">{t.latest}</span>}</div>
+              <div>{item.venueKey ? <VenueMark venue={item.venueKey} /> : publications.filter(paper => item.id.startsWith(paper.id)).map(paper => <VenueMark key={paper.id} venue={paper.venueKey} />)}{item.link ? <a href={item.link} target={item.link.startsWith('#') ? undefined : '_blank'} rel="noopener noreferrer">{item.text[language]}</a> : <span>{item.text[language]}</span>}</div>
             </li>)}
           </ol>
           {news.length > 6 && <button type="button" className="text-button news-toggle" aria-expanded={expandedNews} onClick={() => setExpandedNews(!expandedNews)}>{expandedNews ? t.lessNews : t.allNews}{expandedNews ? <ChevronUp size={14} /> : <ChevronDown size={14} />}</button>}
@@ -134,7 +133,6 @@ export function App() {
 
         <section id="publications" className="content-section publications-section" aria-labelledby="publications-heading">
           <div className="section-heading"><h2 id="publications-heading"><span className="heading-emoji" aria-hidden="true">📑</span>{t.publications}</h2><External href={profile.scholar} className="section-link">{t.viewScholar}<ArrowUpRight size={14} /></External></div>
-          <p className="section-description">{t.publicationNote}</p>
           {[...new Set(publications.map(p => p.year))].sort((a, b) => b - a).map(year => <div className="publication-year-group" key={year}>
             <div className="year-divider"><h3>{year}</h3><span /></div>
             {publications.filter(p => p.year === year).map(paper => <article className="publication" id={`paper-${paper.id}`} key={paper.id}>
@@ -148,7 +146,6 @@ export function App() {
                 {language === 'zh' && <p className="original-title" lang="en">{paper.title}</p>}
                 <p className="authors">{paper.authors.map((author, i) => <span key={author}>{i > 0 ? ', ' : ''}{author === 'Bingqiao Gu' ? <strong>{language === 'en' ? author : '谷炳桥'}</strong> : author}</span>)}</p>
                 <p className="paper-venue"><VenueMark venue={paper.venueKey} />{paper.venue[language]}</p>
-                <div className="paper-tags">{paper.firstAuthor && <span>{t.firstAuthor}</span>}{paper.status && <span className="status-tag"><Check size={11} />{paper.status[language]}</span>}</div>
                 <div className="paper-links">
                   {paper.links.paper && <External href={paper.links.paper}><FileText size={13} />{t.paper}</External>}
                   {paper.links.doi && <External href={paper.links.doi}><ExternalLink size={12} />{t.doi}</External>}
