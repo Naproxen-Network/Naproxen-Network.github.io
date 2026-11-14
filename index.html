@@ -1,203 +1,32 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>谷炳桥 · Bingqiao Gu</title>
-  <meta name="description" content="谷炳桥 · Bingqiao Gu — Shandong University. Research on LLMs, social computing, complex systems, and reinforcement learning." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
-  <div class="page-grain" aria-hidden="true"></div>
-
-  <header class="site-header" id="top">
-    <a class="brand-mark" href="#top" aria-label="Home">
-      <img src="images/nbu_logo2.png" alt="Shandong University" class="seal" width="44" height="44" />
-      <span class="brand-text">
-        <span class="brand-cn zh-only">谷炳桥</span>
-        <span class="brand-en">Bingqiao Gu</span>
-      </span>
-    </a>
-    <nav class="site-nav" aria-label="Primary">
-      <a href="#about" data-i18n="nav.about">简介</a>
-      <a href="#publications" data-i18n="nav.pubs">论文</a>
-      <a href="#contact" data-i18n="nav.contact">联系</a>
-    </nav>
-    <button type="button" class="lang-toggle" id="langToggle" aria-label="Switch language">
-      <span class="lang-active" data-lang-label>中</span>
-      <span class="lang-divider">/</span>
-      <span class="lang-idle" data-lang-idle>EN</span>
-    </button>
-  </header>
-
-  <main>
-    <section class="hero" aria-labelledby="hero-name">
-      <div class="hero-backdrop" aria-hidden="true">
-        <img src="images/nbu_logo2.png" alt="" class="hero-backdrop-seal" />
-      </div>
-      <div class="hero-copy">
-        <div class="hero-affiliation">
-          <img src="images/nbu_logo2.png" alt="" class="hero-seal" width="56" height="56" />
-          <p data-i18n="hero.affil">山东大学 · 计算机科学与技术</p>
-        </div>
-        <h1 id="hero-name" class="hero-name">
-          <span class="name-cn zh-only">谷炳桥</span>
-          <span class="name-en">Bingqiao Gu</span>
-        </h1>
-        <p class="hero-lead" data-i18n="hero.lead">
-          我对大模型后训练、社交计算与推荐、强化学习和大语言模型在大规模文本挖掘和图挖掘中的应用感兴趣。
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#about" data-i18n="hero.cta.primary">自我介绍</a>
-          <a class="btn btn-ghost" href="#publications" data-i18n="hero.cta.secondary">论文列表</a>
-        </div>
-      </div>
-      <div class="hero-wave" aria-hidden="true"></div>
-    </section>
-
-    <section class="section about" id="about">
-      <div class="section-inner">
-        <p class="section-kicker" data-i18n="about.kicker">关于</p>
-        <h2 class="section-title" data-i18n="about.title">自我介绍</h2>
-        <div class="about-grid">
-          <div class="about-prose">
-            <p data-i18n="about.p1">
-              谷炳桥（Bingqiao Gu），就读于山东大学（Shandong University）计算机科学与技术专业，研究方向是大语言模型、社会计算、复杂系统、强化学习和大语言模型在图挖掘和文本挖掘中的应用，截止目前在 ACM SIGKDD、Nature Communications 等国际期刊、会议发表论文。
-            </p>
-            <p data-i18n="about.p2">
-              我熟悉 SFT、DPO 及 LoRA、多智能体强化学习算法，同时目前对后训练、大语言模型推理、大模型智能体感兴趣。学术研究领域，如果您对科学学、AI 伦理、复杂系统、高阶网络数据挖掘感兴趣，欢迎与我联系。
-            </p>
-          </div>
-          <ul class="about-facts">
-            <li>
-              <span class="fact-label" data-i18n="about.fact1.label">院校</span>
-              <span class="fact-value" data-i18n="about.fact1.value">山东大学 Shandong University</span>
-            </li>
-            <li>
-              <span class="fact-label" data-i18n="about.fact2.label">方向</span>
-              <span class="fact-value" data-i18n="about.fact2.value">LLMs · 社会计算 · 复杂系统 · 强化学习</span>
-            </li>
-            <li>
-              <span class="fact-label" data-i18n="about.fact3.label">兴趣</span>
-              <span class="fact-value" data-i18n="about.fact3.value">游泳 · 唱歌</span>
-            </li>
-            <li>
-              <span class="fact-label" data-i18n="about.fact4.label">导师</span>
-              <span class="fact-value" data-i18n="about.fact4.value">李栋教授</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section publications" id="publications">
-      <div class="section-inner">
-        <p class="section-kicker" data-i18n="pubs.kicker">论文</p>
-        <h2 class="section-title" data-i18n="pubs.title">发表与成果</h2>
-
-        <article class="pub reveal">
-          <div class="pub-meta">
-            <span class="pub-badge" data-i18n="pubs.1.badge">CCF-A · 独立第一作者</span>
-            <span class="pub-venue">ACM SIGKDD 2026</span>
-          </div>
-          <h3 class="pub-title">HyMAGE: Semantic-Aware Dynamic Hypergraph Generation</h3>
-          <p class="pub-authors" data-i18n="pubs.1.authors">
-            B. Gu, J. Zeng, N. Zhou, X. Qi, D. Li
-          </p>
-          <p class="pub-abstract" data-i18n="pubs.1.abstract">
-            我们提出 HyMAGE：基于语义优先连接、无需图结构预训练的语义感知动态超图生成框架。每个节点作为自治智能体，由 LLM 进行局部语义选择，使超边的形成与溶解在语义亲和与结构语境中自组织涌现。HyMAGE 可复现真实超图的九种高阶结构模式，并生成拓扑—语义对齐的属性超图，在 HGNN 训练与扩散行为上均表现良好。
-          </p>
-          <p class="pub-tags">
-            <span>Hypergraph Generation</span>
-            <span>LLM Agents</span>
-            <span>Semantic Modeling</span>
-            <span>Data Mining</span>
-          </p>
-        </article>
-
-        <article class="pub reveal">
-          <div class="pub-meta">
-            <span class="pub-badge" data-i18n="pubs.2.badge">Journal</span>
-            <span class="pub-venue">Nature Communications 2026</span>
-          </div>
-          <h3 class="pub-title">
-            <a class="pub-title-link" href="https://www.nature.com/articles/s41467-026-75382-1" target="_blank" rel="noopener noreferrer">Modeling network evolution by multi-agent reinforcement learning</a>
-          </h3>
-          <p class="pub-authors">
-            D. Li, T. Lin, Z. Bao, B. Gu, Y. Zhang, F. Yang, Y. Sun, Z. Du, P. Holme
-          </p>
-          <p class="pub-abstract" data-i18n="pubs.2.abstract">
-            针对网络演化常为群体决策、既有模型缺少节点策略学习与协同的问题，本文提出基于多智能体强化学习的网络演化模型 NEMARL：自治节点协作涌现群体智能并驱动结构演化。实验表明该模型可复现经典网络特征、较好拟合真实网络，并在场景测试中验证有效性。
-          </p>
-          <p class="pub-links">
-            <a href="https://www.nature.com/articles/s41467-026-75382-1" target="_blank" rel="noopener noreferrer" data-i18n="pubs.2.link">Nature 全文</a>
-          </p>
-          <p class="pub-tags">
-            <span>Multi-Agent RL</span>
-            <span>Network Evolution</span>
-            <span>Complex Systems</span>
-          </p>
-        </article>
-
-        <article class="pub reveal">
-          <div class="pub-meta">
-            <span class="pub-badge" data-i18n="pubs.3.badge">Conference</span>
-            <span class="pub-venue">ICIC 2026 · Springer LNCS</span>
-          </div>
-          <h3 class="pub-title">
-            <a class="pub-title-link" href="https://link.springer.com/chapter/10.1007/978-981-92-3447-9_25" target="_blank" rel="noopener noreferrer">Lévy Geometric Hypergraphs</a>
-          </h3>
-          <p class="pub-authors">L. Li, B. Gu, D. Li</p>
-          <p class="pub-pages" data-i18n="pubs.3.pages">pp. 307–317</p>
-          <p class="pub-abstract" data-i18n="pubs.3.abstract">
-            我们提出 Lévy Geometric Hypergraphs（LGH）：由 Lévy 飞行驱动的 k-均匀几何超图生成框架。顶点按重尾 Pareto–Lévy 律布点，超边连接尺度 s 内的 k−1 近邻；仿真未见尖锐渗流相变，并呈现尺度不变的高阶重叠结构，可作为高阶智能计算算法的基准生成模型。
-          </p>
-          <p class="pub-links">
-            <a href="https://link.springer.com/chapter/10.1007/978-981-92-3447-9_25" target="_blank" rel="noopener noreferrer" data-i18n="pubs.3.link">Springer 全文</a>
-          </p>
-          <p class="pub-tags">
-            <span>Lévy Flight</span>
-            <span>Hypergraphs</span>
-            <span>Higher-order Interaction</span>
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section contact" id="contact">
-      <div class="section-inner contact-inner">
-        <p class="section-kicker" data-i18n="contact.kicker">联系</p>
-        <h2 class="section-title" data-i18n="contact.title">欢迎交流研究与合作</h2>
-        <p class="section-lead" data-i18n="contact.lead">
-          若你对大语言模型、社会计算、复杂系统或图/文本挖掘相关方向感兴趣，欢迎邮件联系。
-        </p>
-        <a class="contact-mail" href="mailto:gubingqiao@mail.sdu.edu.cn">gubingqiao@mail.sdu.edu.cn</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-wave" aria-hidden="true"></div>
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <img src="images/nbu_logo.png" alt="Shandong University" class="footer-logo zh-only" />
-        <img src="images/nbu_logo2.png" alt="Shandong University" class="footer-seal en-only" width="56" height="56" />
-        <div>
-          <p class="footer-name">
-            <span class="zh-only">谷炳桥 · </span>Bingqiao Gu
-          </p>
-          <p class="footer-affil">
-            <span class="zh-only">山东大学 · </span>Shandong University
-          </p>
-        </div>
-      </div>
-      <p class="footer-copy" data-i18n="footer.copy">© 2026 Bingqiao Gu. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Bingqiao Gu | Shandong University</title>
+    <meta name="description" content="Bingqiao Gu is an undergraduate researcher at Shandong University. Research interests: artificial intelligence, network science and engineering, large language models, and AI agents and their applications." />
+    <link rel="canonical" href="https://naproxen-network.github.io/" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Bingqiao Gu | Shandong University" />
+    <meta property="og:description" content="Research in artificial intelligence, network science and engineering, large language models, and AI agents and their applications. Publications, education, and academic service." />
+    <meta property="og:url" content="https://naproxen-network.github.io/" />
+    <meta property="og:image" content="https://naproxen-network.github.io/images/bingqiao-gu.webp" />
+    <meta property="og:image:alt" content="Portrait of Bingqiao Gu" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Bingqiao Gu","alternateName":"谷炳桥","url":"https://naproxen-network.github.io/","image":"https://naproxen-network.github.io/images/bingqiao-gu.webp","email":"bingqiaog@acm.org","affiliation":{"@type":"CollegeOrUniversity","name":"Shandong University","url":"https://www.sdu.edu.cn/"},"sameAs":["https://scholar.google.com/citations?user=u4KPLu0AAAAJ","https://orcid.org/0009-0009-9631-1324","https://github.com/Naproxen-Network","https://openreview.net/profile?id=~Bingqiao_Gu1"]}</script>
+    <script>
+      try {
+        const theme = localStorage.getItem('bg-theme') || 'light';
+        document.documentElement.dataset.theme = theme === 'dark' ? 'dark' : 'light';
+        document.documentElement.lang = localStorage.getItem('bg-language') === 'zh' ? 'zh-CN' : 'en';
+      } catch { /* Default to English and light mode when storage is unavailable. */ }
+    </script>
+    <script type="module" crossorigin src="/assets/index-DCbQ6oDk.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-B7EoP52a.css">
+  </head>
+  <body>
+    <div id="root"><link rel="preload" as="image" href="/images/bingqiao-gu.webp" fetchPriority="high"/><a href="#main-content" class="skip-link">Skip to content</a><header class="site-header"><div class="header-inner"><a href="#home" class="wordmark">Bingqiao Gu<span class="wordmark-period">.</span></a><nav aria-label="Main navigation" class="desktop-nav"><a href="#home" class="active" aria-current="location">Home</a><a href="#about" class="">About Me</a><a href="#news" class="">News</a><a href="#publications" class="">Publications</a><a href="#awards" class="">Honors &amp; Awards</a><a href="#experiences" class="">Education</a><a href="#service" class="">Service</a><a href="#other" class="">Other Things</a></nav><div class="header-actions"><div class="language-switch" aria-label="Language"><button type="button" lang="en" aria-pressed="true">EN</button><span aria-hidden="true">/</span><button type="button" lang="zh-CN" aria-pressed="false">中文</button></div><span class="action-divider"></span><button type="button" class="icon-button" aria-label="Switch to dark mode" title="Switch to dark mode"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg></button><button type="button" class="icon-button menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-menu"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button></div></div></header><div id="home" class="page-shell"><aside class="sidebar" aria-label="Personal information"><div class="profile-top"><img src="/images/bingqiao-gu.webp" width="853" height="1280" alt="Portrait of Bingqiao Gu" class="portrait" fetchPriority="high"/><div class="profile-details"><h1>Bingqiao Gu</h1><p class="alternate-name">谷炳桥</p></div></div><section class="visitor-section" aria-label="Visitors around the world"><h3>Visitors around the world</h3><div id="visitor-map-embed" class="official-embed" data-provider="whos.amung.us"></div><a class="visitor-stats-link" href="https://whos.amung.us/stats/owy8xz7bj8/" target="_blank" rel="noopener noreferrer">Visitor statistics<!-- --> ↗</a></section><div class="profile-contact"><p class="profile-role">Undergraduate Researcher</p><a href="https://www.sdu.edu.cn/" target="_blank" rel="noopener noreferrer" class="affiliation">Shandong University<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><p class="department">Computer Science and Technology</p><div class="profile-emails"><a href="mailto:bingqiaog@acm.org" class="email-link"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>bingqiaog@acm.org</a><a href="mailto:gubingqiao@mail.sdu.edu.cn" class="email-link"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>gubingqiao@mail.sdu.edu.cn</a></div><div class="social-links"><a href="https://scholar.google.com/citations?user=u4KPLu0AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" title="Google Scholar"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg></a><a href="https://github.com/Naproxen-Network" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a><a href="https://orcid.org/0009-0009-9631-1324" target="_blank" rel="noopener noreferrer" aria-label="ORCID" title="ORCID"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"></circle><circle cx="7.6" cy="7.4" r="1" fill="currentColor"></circle><path d="M7.6 10v7m3.5-7h2.3c5 0 5 7 0 7h-2.3z" stroke="currentColor" stroke-width="1.6"></path></svg></a><a href="https://openreview.net/profile?id=~Bingqiao_Gu1" target="_blank" rel="noopener noreferrer" aria-label="OpenReview" title="OpenReview"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></a></div></div></aside><main id="main-content"><section id="about" class="content-section about-section" aria-labelledby="about-heading"><div class="section-heading"><h2 id="about-heading">About Me</h2></div><div class="about-copy"><p>I am an undergraduate student in Computer Science and Technology at <a href="https://www.sdu.edu.cn/" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">🏫 </span>Shandong University</a>. <!-- -->My research interests are artificial intelligence, network science and engineering, large language models, and AI agents and their applications.<!-- --> <!-- -->My work has appeared in <span class="venue-inline">Nature Communications</span>, <span class="venue-inline">KDD</span>, and <span class="venue-inline">Physica A</span>. I have two first-author papers accepted at CCF A– or CORE A*–ranked conferences or journals.<!-- --> <!-- -->I also serve as a reviewer for The Web Conference (WWW 2027).</p></div><div class="research-interests"><h3><span aria-hidden="true">🌱 </span>Research interests</h3><div><span>Artificial Intelligence</span><span>Network Science and Engineering</span><span>Large Language Models</span><span>AI Agents and Their Applications</span></div></div></section><section id="news" class="content-section news-section" aria-labelledby="news-heading"><div class="section-heading"><h2 id="news-heading"><span class="heading-emoji" aria-hidden="true">🔥</span>News</h2><span class="section-label">2024<!-- --> — <!-- -->2027</span></div><ol class="news-list"><li><time dateTime="2027-08">2027.08</time><div><img class="venue-mark venue-mark-identity" src="/images/venues/kdd.webp" alt="ACM SIGKDD logo" width="60" height="36" loading="lazy"/><span>I plan to attend SIGKDD 2027 in San Jose, USA, either in person or online.</span><span class="new-badge">PLANNED</span></div></li><li><time dateTime="2026-11">2026.11</time><div><img class="venue-mark venue-mark-identity" src="/images/venues/kdd.webp" alt="ACM SIGKDD logo" width="60" height="36" loading="lazy"/><a href="#paper-hyholic" rel="noopener noreferrer">HYHOLIC, our hyperbolic geometric generative model for hypergraphs, has been accepted to KDD 2027!</a><span class="new-badge">NEW</span></div></li><li><time dateTime="2026-10">2026.10</time><div><a href="#awards" rel="noopener noreferrer">Awarded the National Scholarship for the third consecutive year.</a></div></li><li><time dateTime="2026-10">2026.10</time><div><img class="venue-mark venue-mark-icon" src="/images/venues/emnlp.webp" alt="EMNLP logo" width="22" height="22" loading="lazy"/><a href="https://aclanthology.org/2026.findings-emnlp.1270/" target="_blank" rel="noopener noreferrer">PersonaSteer appears in Findings of EMNLP 2026, exploring personalized multi-turn conversations through dynamic activation steering.</a></div></li><li><time dateTime="2026-10">2026.10</time><div><img class="venue-mark venue-mark-wordmark" src="/images/venues/physica.webp" alt="Physica A logo" width="72" height="22" loading="lazy"/><a href="https://doi.org/10.1016/j.physa.2026.132103" target="_blank" rel="noopener noreferrer">Our work on Lévy Geometric Hypergraph heuristics for higher-order link prediction is published in Physica A.</a></div></li><li><time dateTime="2026-08">2026.08</time><div><img class="venue-mark venue-mark-identity" src="/images/venues/kdd.webp" alt="ACM SIGKDD logo" width="60" height="36" loading="lazy"/><a href="https://kdd2026.kdd.org/" target="_blank" rel="noopener noreferrer">I attended SIGKDD 2026 on Jeju Island, South Korea.</a></div></li></ol><button type="button" class="text-button news-toggle" aria-expanded="false">Show all updates<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></button></section><section id="publications" class="content-section publications-section" aria-labelledby="publications-heading"><div class="section-heading"><h2 id="publications-heading"><span class="heading-emoji" aria-hidden="true">📑</span>Publications</h2><a href="https://scholar.google.com/citations?user=u4KPLu0AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" class="section-link">Google Scholar<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></div><p class="section-description">My name is highlighted in the author lists.</p><div class="publication-year-group"><div class="year-divider"><h3>2027</h3><span></span></div><article class="publication" id="paper-hyholic"><button type="button" class="paper-figure" aria-label="Enlarge paper figure: HYHOLIC: A Hyperbolic Geometric Generative Model for Hypergraphs"><span class="venue-badge ">KDD 2027</span><img src="/images/publications/hyholic.webp" alt="Four-panel HYHOLIC benchmark comparison: degree distributions, clustering, a capability matrix, and navigation performance across network sizes." width="600" height="400" loading="lazy"/><span class="zoom-cue"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zoom-in"><circle cx="11" cy="11" r="8"></circle><line x1="21" x2="16.65" y1="21" y2="16.65"></line><line x1="11" x2="11" y1="8" y2="14"></line><line x1="8" x2="14" y1="11" y2="11"></line></svg></span></button><div class="paper-info"><h4><span>HYHOLIC: A Hyperbolic Geometric Generative Model for Hypergraphs</span></h4><p class="authors"><span><strong>Bingqiao Gu</strong></span><span>, <!-- -->Zhanwei Du</span><span>, <!-- -->Sihui Qian</span><span>, <!-- -->Jiale Zeng</span><span>, <!-- -->Yanhao Sun</span><span>, <!-- -->Dong Li</span></p><p class="paper-venue"><img class="venue-mark venue-mark-identity" src="/images/venues/kdd.webp" alt="ACM SIGKDD logo" width="60" height="36" loading="lazy"/>33rd ACM SIGKDD Conference on Knowledge Discovery and Data Mining</p><div class="paper-tags"><span>First author</span><span class="status-tag"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check"><path d="M20 6 9 17l-5-5"></path></svg>Accepted · November 2026</span></div><div class="paper-links"><a href="https://anonymous.4open.science/r/HYHOLIC-7D2E/" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-xml"><path d="m18 16 4-4-4-4"></path><path d="m6 8-4 4 4 4"></path><path d="m14.5 4-5 16"></path></svg>Code</a></div></div></article></div><div class="publication-year-group"><div class="year-divider"><h3>2026</h3><span></span></div><article class="publication" id="paper-nemarl"><button type="button" class="paper-figure" aria-label="Enlarge paper figure: Modeling network evolution by multi-agent reinforcement learning"><span class="venue-badge nature-badge">Nature Communications</span><img src="/images/publications/nemarl.webp" alt="Six NEMARL network snapshots at times 1, 5, 10, 20, 30, and 40, showing nodes moving between community cores and peripheries." width="600" height="400" loading="lazy"/><span class="zoom-cue"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zoom-in"><circle cx="11" cy="11" r="8"></circle><line x1="21" x2="16.65" y1="21" y2="16.65"></line><line x1="11" x2="11" y1="8" y2="14"></line><line x1="8" x2="14" y1="11" y2="11"></line></svg></span></button><div class="paper-info"><h4><a href="https://www.nature.com/articles/s41467-026-75382-1" target="_blank" rel="noopener noreferrer">Modeling network evolution by multi-agent reinforcement learning</a></h4><p class="authors"><span>Dong Li</span><span>, <!-- -->Tianwei Lin</span><span>, <!-- -->Zhaoyang Bao</span><span>, <strong>Bingqiao Gu</strong></span><span>, <!-- -->Yatao Zhang</span><span>, <!-- -->Fei Yang</span><span>, <!-- -->Yanhao Sun</span><span>, <!-- -->Zhanwei Du</span><span>, <!-- -->Petter Holme</span></p><p class="paper-venue"><img class="venue-mark venue-mark-wordmark" src="/images/venues/nature.webp" alt="Nature Communications logo" width="72" height="22" loading="lazy"/>Nature Communications, 17, 8888</p><div class="paper-tags"></div><div class="paper-links"><a href="https://www.nature.com/articles/s41467-026-75382-1" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>Paper</a><a href="https://doi.org/10.1038/s41467-026-75382-1" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>DOI</a><a href="https://github.com/network-computing/NEMARL" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-xml"><path d="m18 16 4-4-4-4"></path><path d="m6 8-4 4 4 4"></path><path d="m14.5 4-5 16"></path></svg>Code</a></div></div></article><article class="publication" id="paper-hymage"><button type="button" class="paper-figure" aria-label="Enlarge paper figure: HyMAGE: Semantic-Aware Dynamic Hypergraph Generation"><span class="venue-badge ">KDD 2026</span><img src="/images/publications/hymage.webp" alt="HyMAGE uses large language models to balance semantic hyperedge addition and dissolution." width="600" height="400" loading="lazy"/><span class="zoom-cue"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zoom-in"><circle cx="11" cy="11" r="8"></circle><line x1="21" x2="16.65" y1="21" y2="16.65"></line><line x1="11" x2="11" y1="8" y2="14"></line><line x1="8" x2="14" y1="11" y2="11"></line></svg></span></button><div class="paper-info"><h4><a href="https://dl.acm.org/doi/10.1145/3770855.3817897" target="_blank" rel="noopener noreferrer">HyMAGE: Semantic-Aware Dynamic Hypergraph Generation</a></h4><p class="authors"><span><strong>Bingqiao Gu</strong></span><span>, <!-- -->Jiale Zeng</span><span>, <!-- -->Nuoran Zhou</span><span>, <!-- -->Xingqin Qi</span><span>, <!-- -->Dong Li</span></p><p class="paper-venue"><img class="venue-mark venue-mark-identity" src="/images/venues/kdd.webp" alt="ACM SIGKDD logo" width="60" height="36" loading="lazy"/>32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Volume 2</p><div class="paper-tags"><span>First author</span></div><div class="paper-links"><a href="https://dl.acm.org/doi/10.1145/3770855.3817897" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>Paper</a><a href="https://doi.org/10.1145/3770855.3817897" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>DOI</a><a href="https://doi.org/10.5281/zenodo.20496905" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-xml"><path d="m18 16 4-4-4-4"></path><path d="m6 8-4 4 4 4"></path><path d="m14.5 4-5 16"></path></svg>Code</a></div></div></article><article class="publication" id="paper-personasteer"><button type="button" class="paper-figure" aria-label="Enlarge paper figure: PersonaSteer: Dynamic Activation Steering for Personalized Multi-turn LLM Conversations"><span class="venue-badge ">EMNLP 2026</span><img src="/images/publications/personasteer.webp" alt="PersonaSteer framework with a steering persona engine and dynamic activation injection into an LLM." width="600" height="400" loading="lazy"/><span class="zoom-cue"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zoom-in"><circle cx="11" cy="11" r="8"></circle><line x1="21" x2="16.65" y1="21" y2="16.65"></line><line x1="11" x2="11" y1="8" y2="14"></line><line x1="8" x2="14" y1="11" y2="11"></line></svg></span></button><div class="paper-info"><h4><a href="https://aclanthology.org/2026.findings-emnlp.1270/" target="_blank" rel="noopener noreferrer">PersonaSteer: Dynamic Activation Steering for Personalized Multi-turn LLM Conversations</a></h4><p class="authors"><span>Sijian Ren</span><span>, <!-- -->Qingbin Zeng</span><span>, <strong>Bingqiao Gu</strong></span><span>, <!-- -->Fengli Xu</span><span>, <!-- -->Yong Li</span></p><p class="paper-venue"><img class="venue-mark venue-mark-icon" src="/images/venues/emnlp.webp" alt="EMNLP logo" width="22" height="22" loading="lazy"/>Findings of the Association for Computational Linguistics: EMNLP 2026, pp. 26856–26876</p><div class="paper-tags"></div><div class="paper-links"><a href="https://aclanthology.org/2026.findings-emnlp.1270/" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>Paper</a><a href="https://doi.org/10.18653/2026.findings-emnlp.1270" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>DOI</a><a href="https://github.com/tsinghua-fib-lab/PersonaSteer" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-xml"><path d="m18 16 4-4-4-4"></path><path d="m6 8-4 4 4 4"></path><path d="m14.5 4-5 16"></path></svg>Code</a></div></div></article><article class="publication" id="paper-levy"><button type="button" class="paper-figure paper-figure-page" aria-label="Enlarge paper figure: Lévy Geometric Hypergraph heuristics for higher-order link prediction"><span class="venue-badge ">Physica A</span><img src="/images/publications/levy.webp" alt="Upper half of the Physica A paper’s first page, including its title, authors, and abstract excerpt." class="paper-page-crop" width="600" height="400" loading="lazy"/><span class="zoom-cue"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zoom-in"><circle cx="11" cy="11" r="8"></circle><line x1="21" x2="16.65" y1="21" y2="16.65"></line><line x1="11" x2="11" y1="8" y2="14"></line><line x1="8" x2="14" y1="11" y2="11"></line></svg></span></button><div class="paper-info"><h4><a href="https://www.sciencedirect.com/science/article/pii/S0378437126008496" target="_blank" rel="noopener noreferrer">Lévy Geometric Hypergraph heuristics for higher-order link prediction</a></h4><p class="authors"><span><strong>Bingqiao Gu</strong></span><span>, <!-- -->Longqi Li</span><span>, <!-- -->Zhaoyang Bao</span><span>, <!-- -->Zhanwei Du</span><span>, <!-- -->Dong Li</span></p><p class="paper-venue"><img class="venue-mark venue-mark-wordmark" src="/images/venues/physica.webp" alt="Physica A logo" width="72" height="22" loading="lazy"/>Physica A: Statistical Mechanics and its Applications, 702, 132103</p><div class="paper-tags"><span>First author</span></div><div class="paper-links"><a href="https://www.sciencedirect.com/science/article/pii/S0378437126008496" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>Paper</a><a href="https://doi.org/10.1016/j.physa.2026.132103" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>DOI</a></div></div></article></div></section><section id="awards" class="content-section awards-section" aria-labelledby="awards-heading"><div class="section-heading"><h2 id="awards-heading"><span class="heading-emoji" aria-hidden="true">🏅</span>Honors &amp; Awards</h2></div><div class="award-row"><div class="award-symbol"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trophy"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg></div><div><h3>National Scholarship</h3><p>Awarded for the third consecutive year.</p><div class="award-dates"><time dateTime="2026-10">2026.10</time></div></div></div><div class="award-row"><div class="award-symbol"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trophy"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg></div><div><h3>National Scholarship</h3><p>Awarded for the second consecutive year.</p><div class="award-dates"><time dateTime="2025-10">2025.10</time></div></div></div><div class="award-row"><div class="award-symbol"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trophy"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg></div><div><h3>National Scholarship</h3><p>Awarded the National Scholarship.</p><div class="award-dates"><time dateTime="2024-10">2024.10</time></div></div></div></section><section id="experiences" class="content-section experiences-section" aria-labelledby="experiences-heading"><div class="section-heading"><h2 id="experiences-heading"><span class="heading-emoji" aria-hidden="true">🎓</span>Education</h2></div><ol class="timeline"><li class="upcoming"><span class="timeline-dot"></span><span class="experience-date">2027 · Upcoming</span><div class="education-detail"><img class="university-logo" src="/images/universities/tsinghua.webp" width="52" height="52" alt="Tsinghua University emblem" loading="lazy"/><div class="experience-body"><h3><a href="https://www.ee.tsinghua.edu.cn/" target="_blank" rel="noopener noreferrer">Tsinghua University<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></h3><h4>Ph.D. studies in Electronic Engineering</h4><p>In 2027, I will join the Department of Electronic Engineering at Tsinghua University to pursue a Ph.D.</p></div></div></li><li class=""><span class="timeline-dot"></span><span class="experience-date">Present</span><div class="education-detail"><img class="university-logo" src="/images/universities/shandong.webp" width="52" height="52" alt="Shandong University emblem" loading="lazy"/><div class="experience-body"><h3><a href="https://www.sdu.edu.cn/" target="_blank" rel="noopener noreferrer">Shandong University<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></h3><h4>Undergraduate · Computer Science and Technology</h4><p>Undergraduate studies in Computer Science and Technology.</p></div></div></li></ol></section><section id="service" class="content-section service-section" aria-labelledby="service-heading"><div class="section-heading"><h2 id="service-heading"><span class="heading-emoji" aria-hidden="true">📝</span>Academic Service</h2></div><ul class="service-list"><li><time>2027</time><div><img class="venue-mark venue-mark-icon" src="/images/venues/www.webp" alt="The Web Conference logo" width="22" height="22" loading="lazy"/><strong><a href="https://www2027.thewebconf.org/" target="_blank" rel="noopener noreferrer">The Web Conference (WWW 2027)</a></strong><span class="service-role">Reviewer</span></div></li></ul></section><section id="other" class="content-section other-section" aria-labelledby="other-heading"><div class="section-heading"><h2 id="other-heading"><span class="heading-emoji" aria-hidden="true">🏊</span>Other Things</h2></div><p>Outside of research, I enjoy swimming and thinking about how people interact and form social relationships.</p></section><section class="contact-section" aria-labelledby="contact-heading"><div><h2 id="contact-heading">Get in touch</h2><p>For research discussions and academic collaborations, please feel free to reach out.</p></div><div class="contact-emails"><a href="mailto:bingqiaog@acm.org" aria-label="Get in touch: bingqiaog@acm.org"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg><span>bingqiaog@acm.org</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><a href="mailto:gubingqiao@mail.sdu.edu.cn" aria-label="Get in touch: gubingqiao@mail.sdu.edu.cn"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg><span>gubingqiao@mail.sdu.edu.cn</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></div></section></main></div><dialog class="figure-dialog" aria-labelledby="figure-title"></dialog></div>
+  </body>
 </html>

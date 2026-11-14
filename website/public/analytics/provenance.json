@@ -1,0 +1,18 @@
+{
+  "provider": "whos.amung.us",
+  "setup_url": "https://whos.amung.us/getstarted/",
+  "selection_method": "Official Map tab; click classic map background, heart pin shape, orange pin color; read #wid_code6 after official handlers updated it.",
+  "widget_id": "owy8xz7bj8",
+  "element_suffix": "ahf",
+  "width": 250,
+  "height": 125,
+  "theme": "classic",
+  "pin": "heart-orange",
+  "embed_file": "official-map-embed.html",
+  "setup_page_snapshot": "live-getstarted-configured.html",
+  "official_script_url": "https://waust.at/m.js",
+  "stats_url": "https://whos.amung.us/stats/owy8xz7bj8/",
+  "stats_url_provenance": "Official m.js assigns map onclick to https://whos.amung.us/stats/ + widget ID + /. The generated provider ID is inserted unchanged.",
+  "account_created": false,
+  "widget_installed": false
+}

@@ -1,0 +1,111 @@
+[
+  {
+    "file": "hyholic.webp",
+    "source": "94_HYHOLIC_A_Hyperbolic_Geomet.pdf",
+    "page": 7,
+    "figure": 6,
+    "crop_pdf_points": [
+      53.5,
+      78,
+      558.5,
+      418
+    ],
+    "figureAlt": {
+      "en": "Four-panel HYHOLIC benchmark comparison: degree distributions, clustering, a capability matrix, and navigation performance across network sizes.",
+      "zh": "HYHOLIC 的四面板基准比较：度分布、聚类、能力矩阵，以及不同网络规模下的导航表现。"
+    },
+    "summary": {
+      "en": "HYHOLIC combines heavy-tailed degrees, high clustering, and navigability, with stable behavior across network sizes.",
+      "zh": "HYHOLIC 同时刻画重尾度分布、高聚类与可导航性，并在不同网络规模下保持稳定表现。"
+    },
+    "width": 1200,
+    "height": 807,
+    "bytes": 79630,
+    "source_sha256": "c576805cb8b0c63bbed501a3be4c504cb3fba88782f91b12a99ea976079e0255",
+    "extraction": "Complete original figure; only surrounding page text and margins cropped. No panels rearranged, recolored, or omitted."
+  },
+  {
+    "file": "hymage.webp",
+    "source": "15_学术论文/2026_01_HyMAGE-Semantic-Aware_Dynamic_Hypergraph_Generation.pdf",
+    "page": 5,
+    "figure": 2,
+    "crop_pdf_points": [
+      53.5,
+      85,
+      558.5,
+      338
+    ],
+    "caption": "Core mechanism of HyMAGE-based hypergraph evolution",
+    "width": 1200,
+    "height": 601,
+    "bytes": 112828
+  },
+  {
+    "file": "nemarl.webp",
+    "source": "15_学术论文/2026_03_Modeling_network_evolution_by_multi-agent_reinforcement_learning.pdf",
+    "page": 7,
+    "figure": 4,
+    "crop_pdf_points": [
+      64,
+      49,
+      541,
+      377
+    ],
+    "figureAlt": {
+      "en": "Six NEMARL network snapshots at times 1, 5, 10, 20, 30, and 40, showing nodes moving between community cores and peripheries.",
+      "zh": "NEMARL 在时刻 1、5、10、20、30 和 40 的六张网络快照，展示节点在社群核心与外围之间的角色转换。"
+    },
+    "summary": {
+      "en": "Multi-agent reinforcement learning reproduces network evolution and changing node roles within communities.",
+      "zh": "多智能体强化学习重现网络演化，以及节点在社群中的角色转换。"
+    },
+    "width": 1200,
+    "height": 825,
+    "bytes": 279956,
+    "source_sha256": "139edd4aca82d92fac32082ce451e92ed7ecfb317d3bd6545fa65d7dc9c5e390",
+    "extraction": "Complete original figure; only surrounding page text and margins cropped. No panels rearranged, recolored, or omitted."
+  },
+  {
+    "file": "personasteer.webp",
+    "source": "15_学术论文/2026_04_PersonaSteer-Multi-Turn_Personalized_Conversation_in_LLMs_via_Dynamic_Activation_Steering.pdf",
+    "page": 4,
+    "figure": 2,
+    "crop_pdf_points": [
+      117,
+      69,
+      475,
+      265
+    ],
+    "caption": "Overview of the proposed PersonaSteer framework",
+    "width": 1074,
+    "height": 588,
+    "bytes": 67514
+  },
+  {
+    "file": "levy.webp",
+    "source": "15_学术论文/2026_02_Levy_Geometric_Hypergraph_heuristics_for_higher-order_link_prediction.pdf",
+    "source_sha256": "65040b4f5c75505becc9b891b71d33e5c79b78580526e6dda381cfbb0084b08b",
+    "page": 1,
+    "figure": null,
+    "capture": "Exact upper half of the original first page: full page width, y=0 through page height/2. No editorial modifications or rearrangement.",
+    "page_pdf_points": [
+      0.0,
+      0.0,
+      544.2520141601562,
+      742.677001953125
+    ],
+    "crop_pdf_points": [
+      0.0,
+      0.0,
+      544.2520141601562,
+      371.3385009765625
+    ],
+    "width": 1100,
+    "height": 751,
+    "bytes": 110852,
+    "figureAlt": {
+      "en": "Upper half of the Physica A paper’s first page, showing the journal header, title, authors, and an excerpt of the abstract.",
+      "zh": "Physica A 论文首页的上半部分，包含期刊页眉、论文标题、作者与摘要节选。"
+    }
+  }
+]

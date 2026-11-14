@@ -1,0 +1,74 @@
+{
+  "assets": [
+    {
+      "file": "kdd.webp",
+      "identity": "Official generic SIGKDD full logo with broad black KDD wordmark, cyan and blue geometric motif, white background",
+      "officialSourcePage": "https://recsys.acm.org/recsys24/",
+      "originalAssetUrl": "https://recsys.acm.org/wp-content/uploads/2024/06/sigkdd-logo.jpg",
+      "originalFile": "official-sigkdd-logo.jpg",
+      "width": 1252,
+      "height": 796,
+      "mode": "RGB",
+      "transformation": "Lossless WebP encoding of the decoded official JPEG. No resizing, cropping, recoloring, redrawing, or rearrangement. Full original boundaries and white background preserved.",
+      "sha256Original": "3e9922e4d80c31f8fe2b7e63c335fde008eec86028356555a026c66225261669",
+      "inspected": "Viewed downloaded original. Large black KDD starts near y449 of796, equivalent to97px at172px canvas height; full geometric motif fills left and wraps top. This placement closely matches the user reference.",
+      "downloadedAt": "2026-11-14",
+      "replaces": "Earlier kdd.webp in this folder used a different, thin-letter official2014 variant. Current kdd.webp uses the wide-letter ACM RecSys source.",
+      "id": "kdd"
+    },
+    {
+      "id": "emnlp",
+      "file": "emnlp.webp",
+      "source_page": "https://2026.emnlp.org/",
+      "source_asset": "https://2026.emnlp.org/assets/images/apple-touch-icon-152x152.png",
+      "related_full_logo": "https://2026.emnlp.org/assets/images/logos/emnlp_2026_logo_v1.png",
+      "note": "Official EMNLP2026 favicon/touch icon, red bridge mark. Source HTML declares asset; original icon re-encoded losslessly.",
+      "width": 152,
+      "height": 152,
+      "bytes": 1630
+    },
+    {
+      "id": "nature",
+      "file": "nature.webp",
+      "source_page": "https://www.nature.com/ncomms/",
+      "source_asset": "https://media.springernature.com/full/nature-cms/uploads/product/ncomms/header-7001f06bc3fe2437048388e9f2f44215.svg",
+      "note": "Original Nature Communications journal header vector wordmark, rasterized at 3× on white. Original genuine SVG also retained as nature-communications.svg.",
+      "width": 429,
+      "height": 96,
+      "bytes": 8426
+    },
+    {
+      "id": "physica",
+      "file": "physica.webp",
+      "source_page": "https://www.sciencedirect.com/science/article/pii/S0378437126008496",
+      "source_local_pdf": "15_学术论文/2026_02_Levy_Geometric_Hypergraph_heuristics_for_higher-order_link_prediction.pdf",
+      "source_pdf_page": 1,
+      "source_image_xref": 516,
+      "source_image_dimensions": [
+        237,
+        299
+      ],
+      "source_crop_viewbox": [
+        4,
+        55,
+        228,
+        55
+      ],
+      "note": "Actual Physica A journal cover embedded in the publisher-formatted paper. Extracted journal title band, preserving PHYSICA A and statistical mechanics subtitle; no recreated lettering.",
+      "width": 456,
+      "height": 110,
+      "bytes": 9980
+    },
+    {
+      "id": "www",
+      "file": "www.webp",
+      "width": 50,
+      "height": 53,
+      "bytes": 1540,
+      "source_page": "https://www2027.thewebconf.org/",
+      "source_asset": "https://www2027.thewebconf.org/wp-content/uploads/2026/08/favicon.png",
+      "note": "Official 2027 conference favicon/touch icon declared on current event homepage. Re-encoded losslessly; original identity unchanged. Homepage verified through conference-series site https://thewebconf.org/."
+    }
+  ],
+  "display_recommendation": "KDD uses the full blue/cyan geometric motif and black lettering at60×36px. Nature and Physica use wordmarks; EMNLP and WWW use icons."
+}

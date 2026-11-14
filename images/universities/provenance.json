@@ -1,0 +1,176 @@
+{
+  "assets": [
+    {
+      "name": "shandong-university",
+      "input": "sdu-emblem.png",
+      "mime": "image/png",
+      "source_url": "https://culture.sdu.edu.cn/images/xw_03.png",
+      "source_page": "https://culture.sdu.edu.cn/info/1011/1001.htm",
+      "view_box": "0 0 228 228",
+      "note": "Official emblem image; SVG viewport excludes the designer caption to the right. No emblem shapes or colors changed.",
+      "file": "shandong-university.svg",
+      "source_dimensions": [
+        384,
+        225
+      ],
+      "web_file": "shandong-university.webp",
+      "web_dimensions": [
+        208,
+        208
+      ],
+      "export": "Rasterized the SVG viewport to a 208px square WebP for efficient 52px display at up to 4× device pixel ratio."
+    },
+    {
+      "name": "tsinghua-university",
+      "input": "tsinghua-source.jpg",
+      "mime": "image/jpeg",
+      "source_url": "https://vi.tsinghua.edu.cn/__local/8/1C/21/2F02A66E31BF084FE340463BB47_B9A95F73_185BC.jpg",
+      "source_page": "https://vi.tsinghua.edu.cn/gk/xxbz/xh.htm",
+      "view_box": "410 20 555 555",
+      "note": "Official purple emblem from the university visual-identity guidelines. Square viewport preserves the complete emblem and surrounding whitespace; image pixels unmodified.",
+      "file": "tsinghua-university.svg",
+      "source_dimensions": [
+        1400,
+        600
+      ],
+      "web_file": "tsinghua-university.webp",
+      "web_dimensions": [
+        208,
+        208
+      ],
+      "export": "Rasterized the SVG viewport to a 208px square WebP for efficient 52px display at up to 4× device pixel ratio."
+    }
+  ],
+  "paper_homepages": {
+    "nemarl": "https://www.nature.com/articles/s41467-026-75382-1",
+    "hymage": "https://dl.acm.org/doi/10.1145/3770855.3817897",
+    "personasteer": "https://aclanthology.org/2026.findings-emnlp.1270/",
+    "levy": "https://www.sciencedirect.com/science/article/pii/S0378437126008496"
+  },
+  "verification": "Primary publisher links match verified publication identifiers. ACL page read directly; Nature, ACM, and ScienceDirect apply automated-access restrictions. No DOI or publisher URL inferred from title alone.",
+  "normalized_assets": [
+    {
+      "name": "shandong",
+      "file": "shandong.webp",
+      "source_local": "/tmp/bingqiao-university-logos/sdu-emblem.png",
+      "source_url": "https://culture.sdu.edu.cn/images/xw_03.png",
+      "source_page": "https://culture.sdu.edu.cn/info/1011/1001.htm",
+      "source_dimensions": [
+        384,
+        225
+      ],
+      "source_sha256": "29552a9e083fc208b7da584e81623353274622eb9f96b3e89d820cd38c8a5e47",
+      "source_ink_bounds": [
+        4,
+        4,
+        224,
+        221
+      ],
+      "crop_source_pixels": [
+        2,
+        2,
+        226,
+        223
+      ],
+      "resize_dimensions": [
+        194,
+        192
+      ],
+      "canvas_dimensions": [
+        208,
+        208
+      ],
+      "placement_pixels": [
+        7,
+        8,
+        201,
+        200
+      ],
+      "measured_ink_bounds_before": [
+        3,
+        3,
+        205,
+        203
+      ],
+      "measured_ink_dimensions_before": [
+        202,
+        200
+      ],
+      "measured_ink_bounds_after": [
+        8,
+        9,
+        200,
+        199
+      ],
+      "measured_ink_dimensions_after": [
+        192,
+        190
+      ],
+      "measurement": "Color mask: max(R,G,B)-min(R,G,B)>25 and min(R,G,B)<225; bounds are left,top,right-exclusive,bottom-exclusive.",
+      "note": "Cropped only empty outer space; kept complete official emblem, original colors and aspect ratio. Uniform Lanczos resampling; no graphic redrawing/recoloring. Visible emblem width normalized to exactly 192px on a 208px canvas. Shandong original emblem is slightly wider than tall, retained without distortion.",
+      "bytes": 42286
+    },
+    {
+      "name": "tsinghua",
+      "file": "tsinghua.webp",
+      "source_local": "/tmp/bingqiao-university-logos/tsinghua-source.jpg",
+      "source_url": "https://vi.tsinghua.edu.cn/__local/8/1C/21/2F02A66E31BF084FE340463BB47_B9A95F73_185BC.jpg",
+      "source_page": "https://vi.tsinghua.edu.cn/gk/xxbz/xh.htm",
+      "source_dimensions": [
+        1400,
+        600
+      ],
+      "source_sha256": "90132d030d8a70f9d21375c85d8a0c614d44a6201ab82200067b10aca38986a8",
+      "source_ink_bounds": [
+        471,
+        79,
+        903,
+        511
+      ],
+      "crop_source_pixels": [
+        469,
+        77,
+        905,
+        513
+      ],
+      "resize_dimensions": [
+        194,
+        194
+      ],
+      "canvas_dimensions": [
+        208,
+        208
+      ],
+      "placement_pixels": [
+        7,
+        7,
+        201,
+        201
+      ],
+      "measured_ink_bounds_before": [
+        22,
+        21,
+        186,
+        185
+      ],
+      "measured_ink_dimensions_before": [
+        164,
+        164
+      ],
+      "measured_ink_bounds_after": [
+        8,
+        8,
+        200,
+        200
+      ],
+      "measured_ink_dimensions_after": [
+        192,
+        192
+      ],
+      "measurement": "Color mask: max(R,G,B)-min(R,G,B)>25 and min(R,G,B)<225; bounds are left,top,right-exclusive,bottom-exclusive.",
+      "note": "Cropped only empty outer space; kept complete official emblem, original colors and aspect ratio. Uniform Lanczos resampling; no graphic redrawing/recoloring. Visible emblem width normalized to exactly 192px on a 208px canvas. Shandong original emblem is slightly wider than tall, retained without distortion.",
+      "bytes": 58514
+    }
+  ],
+  "display_recommendation": "Use identical width/height styles for both 208px square assets. At CSS 52×52px both colored emblems are exactly 48px wide; do not add per-university size overrides."
+}
