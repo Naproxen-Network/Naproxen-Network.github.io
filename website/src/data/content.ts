@@ -121,7 +121,7 @@ export const publications: Publication[] = [
     firstAuthor: true,
     links: {
       code: 'https://anonymous.4open.science/r/HYHOLIC-7D2E/',
-      project: '/hyholic/',
+      paper: '/hyholic/',
     },
     status: { en: 'Accepted · November 2026', zh: '已录用 · 2026 年 11 月' },
   },

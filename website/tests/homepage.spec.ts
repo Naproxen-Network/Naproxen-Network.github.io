@@ -94,7 +94,7 @@ test('news, navigation, official paper pages, and accessible figure dialog work'
   }
   await expect(page).toHaveURL(/#awards$/);
   await expect(page.locator('#awards')).toBeInViewport();
-  await expect(page.locator('#paper-hyholic').getByRole('link', { name: 'Paper', exact: true })).toHaveCount(0);
+  await expect(page.locator('#paper-hyholic').getByRole('link', { name: 'Paper', exact: true })).toHaveAttribute('href', '/hyholic/');
   await expect(page.locator('a[href*="hyholic.pdf"]')).toHaveCount(0);
   const officialPages = {
     nemarl: 'https://www.nature.com/articles/s41467-026-75382-1',
