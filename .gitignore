@@ -7,3 +7,6 @@ playwright-report/
 .env*
 *.pdf
 *.PDF
+
+!website/public/hyholic/main.pdf
+!hyholic/main.pdf

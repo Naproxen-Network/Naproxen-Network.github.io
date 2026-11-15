@@ -3,7 +3,7 @@ import shutil
 root = Path(__file__).resolve().parents[1]
 build = root / "website" / "dist"
 assert (build / "index.html").is_file(), "Run npm run build in website first"
-assert not any(p.suffix.lower() == ".pdf" for p in build.rglob("*")), "PDF originals must not be published"
+assert all(p.relative_to(build).as_posix() == "hyholic/main.pdf" for p in build.rglob("*") if p.suffix.lower() == ".pdf"), "Only the explicitly authorized HYHOLIC PDF may be published"
 for name in ["assets", "fonts", "images", "papers"]:
     p = root / name
     if p.exists(): shutil.rmtree(p)

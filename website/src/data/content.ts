@@ -101,7 +101,7 @@ export const profile: Profile = {
 };
 
 // Canonical paper titles are retained in English; titleZh provides a Chinese rendering.
-// HYHOLIC acceptance and authors follow the owner's update; the supplied PDF is anonymous.
+// HYHOLIC's reading page hosts the owner's explicitly supplied main.pdf.
 export const publications: Publication[] = [
   {
     id: 'hyholic',
@@ -121,6 +121,7 @@ export const publications: Publication[] = [
     firstAuthor: true,
     links: {
       code: 'https://anonymous.4open.science/r/HYHOLIC-7D2E/',
+      project: '/hyholic/',
     },
     status: { en: 'Accepted · November 2026', zh: '已录用 · 2026 年 11 月' },
   },

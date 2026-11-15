@@ -14,4 +14,6 @@ cd ..
 python3 scripts/publish-build.py
 ```
 
-Commit and push the updated source and root build together. Paper links point to publisher pages; no paper PDF originals are included.
+Commit and push the updated source and root build together. Paper links point to publisher pages; only the explicitly requested `hyholic/main.pdf` is included. Other paper PDFs remain excluded.
+
+The standalone reader lives at `/hyholic/`; edit `website/public/hyholic/index.html` to update it.
