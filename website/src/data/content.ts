@@ -363,7 +363,7 @@ export const experiences: Experience[] = [
     id: 'education',
     date: { en: 'Present', zh: '至今' },
     title: { en: 'Undergraduate · Computer Science and Technology', zh: '本科 · 计算机科学与技术' },
-    organization: { en: 'Shandong University', zh: '山东大学' },
+    organization: { en: 'Shandong University, Weihai', zh: '山东大学（威海）' },
     logo: '/images/universities/shandong.webp',
     description: {
       en: 'Undergraduate studies in Computer Science and Technology.',
